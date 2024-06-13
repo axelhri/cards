@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* font size */
+  --fs-24: 1.5rem;
+  --fs-14: 0.875rem;
+
+  /* font weight */
+  --fw-600: 600;
+  --fw-700: 700;
+
+  /* colors */
+  --bg-color1: #141414;
+  --bg-color2: #1f1f1f;
+  --color-green: #c4f82a;
+  --color-grey: #333333;
+
+  --white: #fff;
+  --black: #111;
+}
+
+/*  */
+
+body {
+  background-color: var(--bg-color1);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+  padding-inline: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  font-size: var(--fs-24);
+  font-weight: var(--fw-600);
+}
+
+span {
+  color: var(--color-green);
+  font-size: var(--fs-14);
+  font-weight: var(--fw-700);
+}
+
+img {
+  object-fit: cover;
+  max-inline-size: 100%;
+  display: block;
+}
+
+.container {
+  background: var(--bg-color2);
+  max-inline-size: 24rem;
+  inline-size: 100%;
+  border-radius: 12px;
+  padding: 40px;
+}
+
+.userpic {
+  width: 88px;
+  height: 88px;
+  border-radius: 999px;
+  margin-inline: auto;
+}
+
+.name {
+  margin: 24px 0 4px 0;
+  text-transform: capitalize;
+}
+
+p {
+  margin: 24px 0 24px 0;
+  font-size: var(--fs-14);
+}
+
+.link {
+  background-color: var(--color-grey);
+  border-radius: 8px;
+  padding: 12px 0 12px 0;
+  font-weight: 700;
+  font-size: var(--fs-14);
+  margin-bottom: 16px;
+  transition: all 0.2s linear;
+  cursor: pointer;
+  font-weight: var(--fw-700);
+}
+
+.lastlink {
+  margin-bottom: 0;
+}
+
+.link:hover {
+  background-color: var(--color-green);
+  color: var(--color-grey);
+}
